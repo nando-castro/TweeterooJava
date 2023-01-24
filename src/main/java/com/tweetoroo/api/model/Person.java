@@ -9,12 +9,13 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 @Data
 @Entity
 @NoArgsConstructor
-public class User {
+public class Person {
 
-    public User(UserDTO data){
+    public Person(UserDTO data){
         this.username = data.username();
         this.avatar = data.avatar();
     }
@@ -26,7 +27,7 @@ public class User {
     @Column(length = 20, nullable = false)
     private String username;
 
-    @Column(nullable = false)
+    @Column(length = 200 ,nullable = false)
     private String avatar;
     
 }
