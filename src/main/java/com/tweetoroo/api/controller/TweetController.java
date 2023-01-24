@@ -43,7 +43,7 @@ public class TweetController {
       return service.findAll(page);
     }
 
-    @GetMapping("{username}")
+    @GetMapping("/{username}")
     @ResponseStatus(code = HttpStatus.OK)
     public List<Tweet> findByUsername(@PathVariable String username){
         return service.findByUsername(username);
