@@ -15,7 +15,8 @@ import com.tweetoroo.api.service.UserService;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/api")
+@CrossOrigin(origins = "*")
+@RequestMapping("/api/auth")
 public class UserController {
     
     @Autowired
