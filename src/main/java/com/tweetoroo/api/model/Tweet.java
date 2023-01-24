@@ -13,9 +13,9 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @NoArgsConstructor
-public class Tweets {
+public class Tweet {
     
-    public Tweets(TweetDTO data){
+    public Tweet(TweetDTO data){
         this.username = data.username();
         this.text = data.text();
     }
