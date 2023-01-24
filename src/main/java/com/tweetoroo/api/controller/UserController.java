@@ -20,7 +20,7 @@ public class UserController {
     @Autowired
     private UserService service;
 
-    @PostMapping("/signup")
+    @PostMapping("/sign-up")
     @ResponseStatus(code = HttpStatus.CREATED)
     public String signUp(@RequestBody @Valid UserDTO req){
         service.signUp(req);
